@@ -1,0 +1,21 @@
+- Booking Controller
+  - save (save data)
+  - check availability/List
+
+Amdin- 
+   - booking_hour_tbl
+	- Add booking hours
+	- 
+
+DB 
+  - client_tbl
+	- full_name
+	- contact_no
+	- email
+
+  - Booking_detail
+	- 
+
+booked_tbl
+	- client_id
+	- booking_hr_id
