@@ -1,0 +1,10 @@
+$git init
+$git add .
+$git commit -a -m 'çomments'
+
+create repo in gitHub
+
+
+git remote add origin https://github.com/Nyuethyue/Thimphu-Futsal.git
+
+git push -u origin master
