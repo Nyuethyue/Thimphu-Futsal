@@ -13,8 +13,10 @@ createApp({
 
 
 import booking from './components/admin/Booking.vue';
+import usermanagement from './components/admin/UserManagement.vue';
 createApp({
     components: {
-        booking
+        booking,
+        usermanagement
     }
 }).mount('#booking')

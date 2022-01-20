@@ -1,0 +1,82 @@
+/* User Management */
+._p {
+    font-size: 1rem;
+    line-height: 24px;
+}
+
+._1adminOverveiw_table_recent {
+}
+
+._border_radious {
+    border-radius: 3px;
+}
+
+._box_shadow {
+    background: #fff;
+    /*box-shadow: 0px 2px 28px 0px rgba(48, 48, 48, 0.1);
+  box-shadow: 0px 2px 18px 0px rgba(186, 212, 247, 0.43);*/
+    -webkit-box-shadow: 0 10px 20px rgba(47, 91, 231, 0.1);
+    box-shadow: 0 10px 20px rgba(47, 91, 231, 0.1);
+}
+
+._mar_b30 {
+    margin-bottom: 30px;
+}
+
+._p20 {
+    padding: 18px 20px 25px;
+}
+
+._title0 {
+    color: #222;
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+._button {
+    outline: none;
+    border: 0;
+    cursor: pointer;
+}
+
+._overflow {
+    overflow: auto;
+}
+
+/*TABLE*/
+._table {
+    border-collapse: collapse;
+    width: 100%;
+}
+._table tr {
+}
+._table tr:first-child {
+    background: #a7ccff;
+    background: #0099ff;
+}
+._table tr:first-child:hover {
+    background: #0099ff;
+}
+._table tr:hover,
+._table tr:nth-child(even):hover {
+    background: #ecf9ff;
+}
+._table tr:nth-child(even) {
+    background: #ececec8c;
+}
+._table tr th {
+    border: 1px solid transparent;
+    text-align: left;
+    padding: 8px 13px;
+    color: #fff;
+    font-size: 15px;
+}
+._table tr td {
+    border: 1px solid #f3f3f3;
+    text-align: left;
+    padding: 8px 13px;
+    min-width: 103px;
+    font-size: 15px;
+}
+/*TABLE*/

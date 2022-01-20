@@ -17,7 +17,12 @@ Route::get('/', function () {
     return view('pages.frontend.index');
 });
 
-Auth::routes();
 
+// Admin Routes
+Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+// Frontend Routes
 Route::get('/getAllUsers', [App\Http\Controllers\admin\UserController::class, 'index'])->name('getAllUsers');
+Route::get('/booking', [App\Http\Controllers\frontend\BookingController::class, 'index'])->name('booking');
