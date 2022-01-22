@@ -13,7 +13,7 @@
             <a href="{{ route('home') }}" class="nav-link">
             <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
-                Bookings
+                Confirm Bookings
               </p>
             </a>
           </li>
@@ -22,7 +22,16 @@
             <a href="{{ route('getAllUsers') }}" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
-                Dashboard
+                Booked
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="{{ route('getAllUsers') }}" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                Booked History
               </p>
             </a>
           </li>

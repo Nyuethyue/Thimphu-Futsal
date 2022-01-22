@@ -1,6 +1,7 @@
 @extends('layouts.frontend.app')
 
 @section('content')
+<!-- Hero -->
 <section class="py-0" id="home">
   <div class="bg-holder d-none d-md-block" style="background-image:url(img/gallery/hero.jpg);background-position:right bottom;background-size:contain;margin-top:5.625rem;">
   </div>

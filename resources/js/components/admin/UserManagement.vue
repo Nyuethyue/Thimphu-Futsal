@@ -1,9 +1,8 @@
 <template>
 	<div class="_1adminOverveiw_table_recent _box_shadow _border_radious _mar_b30 _p20">
-		<p class="_title0 _p">Users 
-			<button class="_button" @click="addModal=true"><Icon type="md-add" /> Add admin</button>
-		</p>
-
+			<p>
+				<button  class="btn btn-outline-primary order-0" @click="addModal=true">Add admin</button>
+			</p>
 		<div class="_overflow _table_div">
 			<table class="_table">
 				<!-- TABLE TITLE -->
@@ -36,8 +35,8 @@
 					<td class="">Admin</td>
 					<td>21/2/2022</td>
 					<td>
-						<button class="_button" type="info" size="small">Edit</button>
-						<button class="_button" type="error" size="small">Delete</button>
+						<button class="btn btn-outline-primary order-0" type="info" size="small">Edit</button>
+						<button class="btn btn-outline-danger order-0" type="error" size="small">Delete</button>
 					</td>
 				</tr>
 				<tr>
@@ -47,11 +46,58 @@
 					<td class="">Admin</td>
 					<td>21/2/2022</td>
 					<td>
-						<button class="_button" type="info" size="small">Edit</button>
-						<button class="_button" type="error" size="small">Delete</button>
+						<button class="btn btn-outline-primary order-0" type="info" size="small">Edit</button>
+						<button class="btn btn-outline-danger order-0" type="error" size="small">Delete</button>
+					</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td class="_table_name">Nima Wangchuk</td>
+					<td class="">nima@gmail.com</td>
+					<td class="">Admin</td>
+					<td>21/2/2022</td>
+					<td>
+						<button class="btn btn-outline-primary order-0" type="info" size="small">Edit</button>
+						<button class="btn btn-outline-danger order-0" type="error" size="small">Delete</button>
 					</td>
 				</tr>
 			</table>
 		</div>
 	</div>
+	
+	<!-- === tag adding modal === -->
+	<Modal
+		v-model="addModal"
+		title="Add admin"
+		:mask-closable="false"
+		:closable="false"
+
+		>
+		<div class="space">
+			<Input type="text" v-model="data.fullName" placeholder="Full name"  />
+		</div>
+		<div class="space">
+			<Input type="email" v-model="data.email" placeholder="Email"  />
+		</div>
+		<div class="space">
+			<Input type="password" v-model="data.password" placeholder="Password"  />
+		</div>
+		<div class="space">
+			<Select v-model="data.role_id"  placeholder="Select admin type">
+				<Option :value="r.id" v-for="(r, i) in roles" :key="i" v-if="roles.length">{{r.roleName}}</Option>
+				<!-- <Option value="Editor" >Editor</Option> -->
+			</Select>
+		</div>
+		
+		
+		
+
+		<div slot="footer">
+			<Button type="default" @click="addModal=false">Close</Button>
+			<Button type="primary" @click="addAdmin" :disabled="isAdding" :loading="isAdding">{{isAdding ? 'Adding..' : 'Add admin'}}</Button>
+		</div>
+
+	</Modal>
+
+	<!-- === tag adding modal === -->
 </template>
