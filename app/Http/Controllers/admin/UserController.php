@@ -17,6 +17,10 @@ class UserController extends Controller
         return view('pages.admin.user');
     }
 
+    public function test() {
+        return 'it is working';
+    }
+
     /**
      * Show the form for creating a new resource.
      *

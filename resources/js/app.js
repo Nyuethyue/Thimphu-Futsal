@@ -2,6 +2,7 @@ require('./bootstrap');
 
 // Vue JS
 import { createApp, CreateApp } from 'vue';
+import common from './common';
 
 import home from './components/Home.vue';
 
@@ -9,7 +10,7 @@ createApp({
     components: {
         home
     }
-}).mount('#app')
+}).mixin(common).mount('#app')
 
 
 import booking from './components/admin/Booking.vue';
@@ -19,4 +20,4 @@ createApp({
         booking,
         usermanagement
     }
-}).mount('#booking')
+}).mixin(common).mount('#booking')

@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::post('/app/create_admin', [App\Http\Controllers\admin\UserController::class, 'test']);
+
 Route::get('/', function () {
     return view('pages.frontend.index');
 });
